@@ -6,5 +6,12 @@
 # Calculate the product of all of the numbers in the list.
 
 from resources import randlist
-
-print(randlist)
+a = randlist
+print(a)
+a.sort()
+print(a[-1])
+print(sum(a))
+prod = 1
+for x in a:
+    prod *= x
+print(prod)
