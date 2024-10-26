@@ -10,7 +10,7 @@ a = randlist
 print(a)
 a.sort()
 print(a[-1])
-print(sum(a))
+# print(sum(a))
 prod = 1
 for x in a:
     prod *= x
