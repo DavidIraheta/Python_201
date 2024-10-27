@@ -6,3 +6,8 @@
 # their input is a duplicate and deduct a point.
 # If the user loses 5 points, quit the program.
 # They win if they manage to create a set that has more than 10 items.
+user_set = set()
+points = 0
+deductions = 0
+while True:
+    user_input = input("Enter a number: ")
