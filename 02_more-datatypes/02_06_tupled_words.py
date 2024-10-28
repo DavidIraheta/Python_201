@@ -15,8 +15,8 @@
 # print(result_list)
 
 user_string = input("What are some things unique about fall?: ")
-words = user_string.split()
-print(words)
-result_list = [tuple(word) for word in words]
+fall = user_string.split()
+print(fall)
+result_list = [tuple(fall) for word in fall]
 print(result_list)
 

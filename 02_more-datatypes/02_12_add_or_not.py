@@ -11,3 +11,23 @@ points = 0
 deductions = 0
 while True:
     user_input = input("Enter a number: ")
+    if not user_input.isdigit():
+        print("Please enter a number.")
+        continue
+    user_input = int(user_input)
+    if user_input in user_set:
+        print("You already entered that number.")
+        deductions += 1
+        points -= 1
+    else:
+        user_set.add(user_input)
+        points += 1
+    if deductions == 5:
+        print("You lost!")
+        break
+    if len(user_set) > 10:
+        print("You win!")
+        break
+print(user_set)
+
+        

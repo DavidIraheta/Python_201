@@ -22,3 +22,11 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+office_favorites = []
+office_favorites.sort()
+for person in office:
+    name = person["full_name"].split()
+    office_favorites.append(f'{name[1].upper()}, {name[0]:<9} {person["item"]}')
+for item in office_favorites:
+    print(item)
