@@ -21,12 +21,29 @@ office = [
     {"full_name": "Toby Flenderson", "item": "files"},
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
-]
+# ]
 
-office_favorites = []
-office_favorites.sort()
-for person in office:
-    name = person["full_name"].split()
-    office_favorites.append(f'{name[1].upper()}, {name[0]:<9} {person["item"]}')
-for item in office_favorites:
-    print(item)
+for x in range(len(office - 1)):
+for i in range(len(office - x i1)):
+    name = office[x]["full_name"].split()
+    last_name = name[1].upper()
+    first_name = name[0]
+    item = office[x]["item"]
+    print(f"{last_name}, {first_name:<10} {item}")
+
+
+# office_favorites = []
+# office_favorites.sort(len"full_name".split()[1])
+# max_last_name_length = max(len(person["full_name"].split()[1]) for person in office)
+# for person in office:
+#     name = person["full_name"].split()
+#     last_name = name[1].upper()
+#     first_name = name[0]
+#     item = person["item"]
+#     office_favorites.append(f"{last_name}, {first_name:<10} {item}")
+#     print(f"{last_name:<{max_last_name_length}}, {first_name:<10} {item}")
+
+
+
+# for item in office_favorites:
+#     print(item)

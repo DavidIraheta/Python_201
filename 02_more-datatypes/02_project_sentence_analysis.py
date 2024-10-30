@@ -7,13 +7,12 @@
 # the total number of characters
 # Use a dictionary to store the count of each of the above.
 
-# Note: ignore all spaces.
-count_dict = {lowercase_letters: 0, uppercase_letters: 0, punctuation_characters: 0, total_characters: 0}
-
+# # Note: ignore all spaces.
+count_dict = {"lowercase_letters": 0, "uppercase_letters": 0, "punctuation_characters": 0, "total_characters": 0}
 lowercase_letters = "abcdefghijklmnopqrstuvwxyz"
 uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 punctuation_characters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~."
-total_characters = char_count_dict = {}
+total_characters = {}
 advice = input("Please tell me your favorite travel destination and why: ")
 for char in advice:
     if char in lowercase_letters:
@@ -22,8 +21,6 @@ for char in advice:
         count_dict["uppercase_letters"] += 1
     if char in punctuation_characters:
         count_dict["punctuation_characters"] += 1
-    count_dict["total_characters"] += 1
     if char != " ":
         count_dict["total_characters"] += 1
 print(count_dict)
-
