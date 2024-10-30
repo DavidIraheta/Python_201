@@ -6,3 +6,10 @@
 # but try to do it using a list comprehension.
 
 word = "codingnomads"
+list = []
+for letter in word:
+    list.append(letter)
+print(list)
+# list = [letter for letter in word]
+# print(list)
+
