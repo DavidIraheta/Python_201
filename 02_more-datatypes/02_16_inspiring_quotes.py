@@ -19,4 +19,10 @@ famous_quotes = [
 name_parts = []
 for person in famous_quotes:
     name = person["full_name"].split()
-    print(f'"{person["quote"]}" - {name[1]}, {name[0]}')
+    last_name = name[1]
+    first_name = name[0]
+    quote = person["quote"]
+    name_parts.append((last_name, first_name, quote))
+    print(f'"{quote}" - {last_name}, {first_name}')
+
+

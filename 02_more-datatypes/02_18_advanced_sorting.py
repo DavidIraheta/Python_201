@@ -8,3 +8,5 @@
 # even if you don't yet completely understand why it works the way it does:
 # https://docs.python.org/3/howto/sorting.html#key-functions
 # Feel free to discuss any questions you have with your mentor and on the forum!
+new_dict = {"item1": 5, "item2": 6, "item3": 1}
+tuples_list = [(key, value) for key, value in new_dict.items()]

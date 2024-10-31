@@ -4,7 +4,6 @@
 #
 # LASTNAME, Name           Office supply item
 # LONGERLASTNAME, Name     Office supply item
-
 office = [
     {"full_name": "Michael Scott", "item": "world's best boss mug"},
     {"full_name": "Dwight Schrute", "item": "pepper spray"},
@@ -21,29 +20,44 @@ office = [
     {"full_name": "Toby Flenderson", "item": "files"},
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
-# ]
+]
 
-for x in range(len(office - 1)):
-for i in range(len(office - x i1)):
-    name = office[x]["full_name"].split()
-    last_name = name[1].upper()
+
+office_favorites = []
+for person in office:
+    name = person["full_name"].split()
     first_name = name[0]
-    item = office[x]["item"]
-    print(f"{last_name}, {first_name:<10} {item}")
-
-
+    last_name = name[1].upper()
+    item = person ["item"]
+    new_name = last_name + ", " + first_name
+    office_favorites.append(f'{new_name:<20} {person["item"]}')
+for item in office_favorites:
+    print(item)
 # office_favorites = []
-# office_favorites.sort(len"full_name".split()[1])
-# max_last_name_length = max(len(person["full_name"].split()[1]) for person in office)
 # for person in office:
 #     name = person["full_name"].split()
-#     last_name = name[1].upper()
+#     last_name = name[1]
 #     first_name = name[0]
 #     item = person["item"]
-#     office_favorites.append(f"{last_name}, {first_name:<10} {item}")
-#     print(f"{last_name:<{max_last_name_length}}, {first_name:<10} {item}")
+#     office_favorites.append((last_name, first_name, item, len(last_name)))
+    
+#     print(f"[{last_name}, {first_name:<20}] {item}")
 
 
 
-# for item in office_favorites:
-#     print(item)
+
+
+
+
+
+# print(f"{office_favorites <20}, {last_name<20, first_name}")
+# for i in range(len(office_favorites)):
+#     for j in range(0, len(office_favorites) - i - 1):
+#         if office_favorites[j][3] > office_favorites[j + 1][3]:
+#             office_favorites[j], office_favorites[j + 1] = office_favorites[j + 1], office_favorites[j]
+# longest_lastname_length = 0
+# for last_name, first_name, item, length in office_favorites:
+#     if length > longest_lastname_length:
+#         longest_lastname_length = length
+# for last_name, first_name, item, _ in office_favorites:
+#     print(f"{last_name}, {first_name:<{longest_lastname_length + 1}}{item}")
