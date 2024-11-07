@@ -10,17 +10,15 @@
 # This pseudo-random element can have an effect on whether your player wins or loses when battling an opponent.
 import random
 
-# Define possible choices
 set_of_choices = set(["left", "right", "far left", "far right", "look around", "fight", "leave", "inventory"])
 inventory = []
 
-# Define items with integer values for their effect (e.g., attack or defense power)
+
 items = {"sword": 5, "golden axe": 10, "shield": 3,"potion": 15}
-# Player stats
+
 user_attack = random.randint(4, 8)
 user_defense = 8
 user_health = 10
-# Enemy stats
 goblin_attack = random.randint(1, 3)
 goblin_defense = 4
 goblin_health = 2
